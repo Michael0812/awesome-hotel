@@ -1,16 +1,10 @@
-html {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-}
-
+html,
 body {
     width: 100%;
     height: 100%;
-}
-
-.row {
-    margin: auto;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden !important;
 }
 
 * {
@@ -21,7 +15,7 @@ body {
 /* Banner */
 
 .hero-image {
-    background-image: url("https://cf.bstatic.com/images/hotel/max1024x768/197/197595612.jpg");
+    background-image: url("https://images.pexels.com/photos/1009136/pexels-photo-1009136.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
     min-height: 80vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -42,4 +36,22 @@ body {
 
 .nav-link {
     color: #ffffff !important;
+}
+
+
+/*Main Content*/
+
+.main-image {
+    width: 100%;
+    height: 100%;
+}
+
+.main-content {
+    background-color: #3f9cc1;
+    color: #ffffff;
+    text-align: center;
+}
+
+img {
+    width: 100%;
 }
