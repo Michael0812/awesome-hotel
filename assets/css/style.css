@@ -163,12 +163,11 @@ a:hover {
     text-decoration: none;
 }
 
+.cta-mobile:hover,
 .cta:hover {
-    color: fff;
-}
-
-.cta-mobile:hover {
-    color: gray;
+    color: #6e9cb7;
+    font-weight: 900;
+    font-size: 18px;
 }
 
 
@@ -191,7 +190,8 @@ a:hover {
 }
 
 .read-more:hover {
-    color: #fff
+    color: #fff;
+    font-size: 20px;
 }
 
 @media only screen and (min-width: 968px) {
