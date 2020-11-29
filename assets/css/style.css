@@ -132,7 +132,7 @@ nav.fill ul li a:hover:after {
 
 .cta-mobile-text {
     margin-top: 6rem;
-    color: #fff;
+    color: #000;
 }
 
 .cta {
@@ -180,19 +180,18 @@ a:hover {
 }
 
 .main-content {
-    background-color: #3f9cc1;
+    background-color: #6e9cb7;
     color: #ffffff;
     text-align: center;
 }
 
+.read-more {
+    color: #000;
+    text-align: left;
+}
 
-/*Activities*/
-
-.view:hover {
-    color: red;
-    font-size: 22px;
-    text-decoration: underline;
-    background-color: #3f9cc1;
+.read-more:hover {
+    color: #fff
 }
 
 @media only screen and (min-width: 968px) {
