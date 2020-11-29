@@ -12,18 +12,28 @@
     }
     /* Banner */
     
-    .hero-image {
-        background-image: url("https://images.pexels.com/photos/1009136/pexels-photo-1009136.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
-        min-height: 80vh;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        max-height: 70vh;
-        box-shadow: inset 2000px 0 0 0 rgba(0, 0, 5, 0.201);
-        border-color: rgba(0, 0, 0, 1);
+    .carousel-inner {
+        max-height: 100vh;
     }
-    /*Navbar*/
+    
+    img {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .navbar {
+        position: fixed;
+        width: 100%;
+        top: 0 !important;
+        z-index: 10;
+        border-radius: 0;
+        background: none;
+        border-color: transparent;
+    }
+    
+    .nav-item {
+        float: right;
+    }
     
     .topnav a {
         text-align: center;
@@ -130,7 +140,7 @@
     }
     
     .cta:hover {
-        color: #fff;
+        color: fff;
     }
     
     .cta-mobile:hover {
@@ -148,14 +158,17 @@
         color: #ffffff;
         text-align: center;
     }
+    /*Activities*/
     
-    img {
-        width: 100%;
+    .view:hover {
+        color: red;
+        font-size: 22px;
+        text-decoration: underline;
+        background-color: #3f9cc1;
     }
     /*Media Queries*/
-    
-    @media only screen and (min-width: 991px) {
+    /*@media only screen and (min-width: 991px) {
         .navbar {
             float: right;
         }
-    }
+    }*/
