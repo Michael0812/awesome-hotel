@@ -72,7 +72,7 @@ nav ul li a:before {
 }
 
 .motto {
-    margin-top: -10rem;
+    margin-top: -8rem;
 }
 
 .logo-nav {
@@ -194,6 +194,29 @@ a:hover {
     font-size: 20px;
 }
 
+
+/*Footer*/
+
+.page-footer,
+.fab,
+.footer-icon,
+.footer-customer {
+    color: #979898;
+}
+
+.footer-icon:hover,
+.fab:hover,
+.footer-customer:hover {
+    color: #c1b086;
+}
+
+h5 {
+    color: #222222;
+}
+
+
+/*Media Queries*/
+
 @media only screen and (min-width: 968px) {
     .motto {
         font-size: 2.5rem;
@@ -201,5 +224,11 @@ a:hover {
     }
     .motto1 {
         font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-image {
+        height: 50vh;
     }
 }
