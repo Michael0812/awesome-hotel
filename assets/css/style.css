@@ -75,6 +75,11 @@ nav ul li a:before {
     margin-top: -10rem;
 }
 
+.logo-nav {
+    height: 45px;
+    float: right;
+}
+
 
 /* stroke */
 
