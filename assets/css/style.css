@@ -237,6 +237,10 @@
                                                                                 bottom: -36px;
                                                                                 opacity: 1;
                                                                             }
+                                                                            
+                                                                            .fa-angle-double-right {
+                                                                                color: #6e9cb7;
+                                                                            }
                                                                             /*Footer*/
                                                                             
                                                                             .page-footer,
