@@ -143,27 +143,26 @@
                                                                                 color: #000;
                                                                             }
                                                                             
-                                                                            .cta {
+                                                                            .cta,
+                                                                            .cta-mobile {
                                                                                 display: block;
+                                                                                background: #fff;
+                                                                                color: #000;
+                                                                                border-radius: 15px;
+                                                                            }
+                                                                            
+                                                                            .cta {
                                                                                 height: 40px;
                                                                                 width: 100px;
                                                                                 padding-left: 12px;
                                                                                 margin-bottom: -4px;
-                                                                                background: #fff;
-                                                                                color: #000;
                                                                                 line-height: 37px;
-                                                                                border-radius: 20px;
                                                                             }
                                                                             
                                                                             .cta-mobile {
-                                                                                display: block;
                                                                                 height: 35px;
                                                                                 width: 90px;
-                                                                                background: #fff;
-                                                                                color: #000;
-                                                                                font-weight: bold;
                                                                                 line-height: 33px;
-                                                                                border-radius: 20px;
                                                                                 text-decoration: none;
                                                                             }
                                                                             
@@ -173,7 +172,7 @@
                                                                             
                                                                             .cta-mobile:hover,
                                                                             .cta:hover {
-                                                                                color: #6e9cb7;
+                                                                                color: #000;
                                                                                 font-weight: 900;
                                                                                 font-size: 18px;
                                                                             }
@@ -219,6 +218,21 @@
                                                                             }
                                                                             /*Media Queries*/
                                                                             
+                                                                            @media only screen and (max-width: 768px) {
+                                                                                .hero-image {
+                                                                                    height: 50vh;
+                                                                                }
+                                                                                .navbar {
+                                                                                    background-color: #000 !important;
+                                                                                }
+                                                                            }
+                                                                            
+                                                                            @media only screen and (min-width: 768px) {
+                                                                                .main-img {
+                                                                                    min-height: 45vh;
+                                                                                }
+                                                                            }
+                                                                            
                                                                             @media only screen and (min-width: 968px) {
                                                                                 .motto {
                                                                                     font-size: 2.5rem;
@@ -229,11 +243,19 @@
                                                                                 }
                                                                             }
                                                                             
-                                                                            @media only screen and (max-width: 768px) {
-                                                                                .hero-image {
-                                                                                    height: 50vh;
+                                                                            @media only screen and (min-width: 1024px) {
+                                                                                .motto {
+                                                                                    font-size: 2.5rem;
+                                                                                    margin-top: -27rem
                                                                                 }
-                                                                                .navbar {
-                                                                                    background-color: #000 !important;
+                                                                                .motto1 {
+                                                                                    font-size: 3rem;
+                                                                                }
+                                                                            }
+                                                                            
+                                                                            @media only screen and (min-width: 1400px) {
+                                                                                .main-title,
+                                                                                .main-content {
+                                                                                    padding-top: 2.5rem;
                                                                                 }
                                                                             }
