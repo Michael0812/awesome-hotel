@@ -25,11 +25,6 @@
                                                                             }
                                                                             /* Banner */
                                                                             
-                                                                            .hero-image {
-                                                                                opacity: 1 #000;
-                                                                                transition: opacity .6s;
-                                                                            }
-                                                                            
                                                                             .carousel-inner {
                                                                                 max-height: 100vh;
                                                                             }
@@ -143,8 +138,7 @@
                                                                                 color: #000;
                                                                             }
                                                                             
-                                                                            .cta,
-                                                                            .cta-mobile {
+                                                                            .cta {
                                                                                 display: block;
                                                                                 background: #fff;
                                                                                 color: #000;
@@ -160,10 +154,15 @@
                                                                             }
                                                                             
                                                                             .cta-mobile {
-                                                                                height: 35px;
-                                                                                width: 90px;
+                                                                                height: 40px;
+                                                                                width: 140px;
                                                                                 line-height: 33px;
-                                                                                text-decoration: none;
+                                                                                border-radius: 15px;
+                                                                                display: block;
+                                                                                background: none;
+                                                                                color: #fff;
+                                                                                border-style: solid;
+                                                                                border-color: #fff;
                                                                             }
                                                                             
                                                                             a:hover {
@@ -172,7 +171,7 @@
                                                                             
                                                                             .cta-mobile:hover,
                                                                             .cta:hover {
-                                                                                color: #000;
+                                                                                color: #6e9cb7;
                                                                                 font-weight: 900;
                                                                                 font-size: 18px;
                                                                             }
@@ -195,7 +194,7 @@
                                                                             }
                                                                             
                                                                             .read-more:hover {
-                                                                                color: #fff;
+                                                                                color: #6e9cb7;
                                                                                 font-size: 20px;
                                                                             }
                                                                             /*Footer*/
@@ -246,7 +245,7 @@
                                                                             @media only screen and (min-width: 1024px) {
                                                                                 .motto {
                                                                                     font-size: 2.5rem;
-                                                                                    margin-top: -27rem
+                                                                                    margin-top: -27rem;
                                                                                 }
                                                                                 .motto1 {
                                                                                     font-size: 3rem;
@@ -260,6 +259,8 @@
                                                                                     padding-top: 1.8rem;
                                                                                     text-align: left;
                                                                                     width: 70%;
+                                                                                    word-spacing: 4px;
+                                                                                    margin-bottom: 3rem;
                                                                                 }
                                                                                 .read-more {
                                                                                     margin-left: 2.9rem;
