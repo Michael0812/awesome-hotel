@@ -1,234 +1,239 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Raleway:wght@100&display=swap');
-html,
-body {
-    width: 100%;
-    height: 100%;
-    font-family: 'Lato', sans-serif;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden !important;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Raleway', sans-serif;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-
-/* Banner */
-
-.carousel-inner {
-    max-height: 100vh;
-}
-
-img {
-    width: 100%;
-    max-width: 100%;
-}
-
-.navbar {
-    position: fixed;
-    width: 100%;
-    top: 0 !important;
-    z-index: 10;
-    border-radius: 0;
-    background: none;
-    border-color: transparent;
-}
-
-.navbar-toggler {
-    border: 0;
-    border-radius: 0;
-}
-
-.topnav a {
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.nav-link {
-    letter-spacing: 2px;
-}
-
-.nav-item {
-    margin-right: 40px;
-    margin-left: 20px;
-}
-
-nav ul li a,
-nav ul li a:after,
-nav ul li a:before {
-    transition: all .5s;
-}
-
-.motto {
-    margin-top: -8rem;
-}
-
-.logo-nav {
-    height: 45px;
-    float: right;
-}
-
-
-/* stroke */
-
-nav.stroke ul li a,
-nav.fill ul li a {
-    position: relative;
-}
-
-nav.stroke ul li a:after,
-nav.fill ul li a:after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 0%;
-    content: '.';
-    color: transparent;
-    background: #ffffff;
-    height: 2px;
-}
-
-nav.stroke ul li a:hover:after {
-    width: 100%;
-}
-
-nav.fill ul li a {
-    transition: all 2s;
-}
-
-nav.fill ul li a:after {
-    text-align: left;
-    content: '.';
-    margin: 0;
-    opacity: 0;
-}
-
-nav.fill ul li a:hover {
-    color: #fff;
-    z-index: 1;
-}
-
-nav.fill ul li a:hover:after {
-    z-index: -10;
-    animation: fill 1s forwards;
-    -webkit-animation: fill 1s forwards;
-    -moz-animation: fill 1s forwards;
-    opacity: 1;
-}
-
-.cta-mobile-text {
-    margin-top: 6rem;
-    color: #000;
-}
-
-.cta {
-    display: block;
-    height: 50px;
-    width: 100px;
-    padding-left: 14px;
-    margin-bottom: -4px;
-    background: #fff;
-    color: #000;
-    line-height: 47px;
-    border-radius: 20px;
-}
-
-.cta-mobile {
-    display: block;
-    height: 35px;
-    width: 90px;
-    background: #fff;
-    color: #000;
-    font-weight: bold;
-    line-height: 33px;
-    border-radius: 20px;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-.cta-mobile:hover,
-.cta:hover {
-    color: #6e9cb7;
-    font-weight: 900;
-    font-size: 18px;
-}
-
-
-/*Main Content*/
-
-.main-image {
-    width: 100%;
-    height: 100%;
-}
-
-.main-content {
-    background-color: #6e9cb7;
-    color: #ffffff;
-    text-align: center;
-}
-
-.read-more {
-    color: #000;
-    text-align: left;
-}
-
-.read-more:hover {
-    color: #fff;
-    font-size: 20px;
-}
-
-
-/*Footer*/
-
-.page-footer,
-.fab,
-.footer-icon,
-.footer-customer {
-    color: #979898;
-}
-
-.footer-icon:hover,
-.fab:hover,
-.footer-customer:hover {
-    color: #c1b086;
-}
-
-h5 {
-    color: #222222;
-}
-
-
-/*Media Queries*/
-
-@media only screen and (min-width: 968px) {
-    .motto {
-        font-size: 2.5rem;
-        margin-top: -20rem
-    }
-    .motto1 {
-        font-size: 3rem;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .hero-image {
-        height: 50vh;
-    }
-}
+                                                                            @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Raleway:wght@100&display=swap');
+                                                                            html,
+                                                                            body {
+                                                                                width: 100%;
+                                                                                height: 100%;
+                                                                                font-family: 'Lato', sans-serif;
+                                                                                margin: 0px;
+                                                                                padding: 0px;
+                                                                                overflow-x: hidden !important;
+                                                                                margin-bottom: 60px;
+                                                                            }
+                                                                            
+                                                                            h1,
+                                                                            h2,
+                                                                            h3,
+                                                                            h4,
+                                                                            h5,
+                                                                            h6 {
+                                                                                font-family: 'Raleway', sans-serif;
+                                                                                color: #fff;
+                                                                            }
+                                                                            
+                                                                            * {
+                                                                                box-sizing: border-box;
+                                                                            }
+                                                                            /* Banner */
+                                                                            
+                                                                            .hero-image {
+                                                                                opacity: 1 #000;
+                                                                                transition: opacity .6s;
+                                                                            }
+                                                                            
+                                                                            .carousel-inner {
+                                                                                max-height: 100vh;
+                                                                            }
+                                                                            
+                                                                            img {
+                                                                                width: 100%;
+                                                                                max-width: 100%;
+                                                                            }
+                                                                            
+                                                                            .navbar {
+                                                                                position: fixed;
+                                                                                width: 100%;
+                                                                                top: 0 !important;
+                                                                                z-index: 10;
+                                                                                border-radius: 0;
+                                                                                background: none;
+                                                                                border-color: transparent;
+                                                                            }
+                                                                            
+                                                                            .navbar-toggler {
+                                                                                border: 0;
+                                                                                border-radius: 0;
+                                                                            }
+                                                                            
+                                                                            .topnav a {
+                                                                                text-align: center;
+                                                                                padding: 14px 16px;
+                                                                                text-decoration: none;
+                                                                                font-size: 17px;
+                                                                            }
+                                                                            
+                                                                            .nav-link {
+                                                                                letter-spacing: 2px;
+                                                                            }
+                                                                            
+                                                                            .nav-item {
+                                                                                margin-right: 40px;
+                                                                                margin-left: 20px;
+                                                                            }
+                                                                            
+                                                                            nav ul li a,
+                                                                            nav ul li a:after,
+                                                                            nav ul li a:before {
+                                                                                transition: all .5s;
+                                                                            }
+                                                                            
+                                                                            .motto {
+                                                                                margin-top: -8rem;
+                                                                            }
+                                                                            
+                                                                            .logo-nav {
+                                                                                height: 45px;
+                                                                                float: right;
+                                                                            }
+                                                                            
+                                                                            .navbar-scroll {
+                                                                                background-color: #000;
+                                                                                transition: background-color 0.5s;
+                                                                            }
+                                                                            /* stroke */
+                                                                            
+                                                                            nav.stroke ul li a,
+                                                                            nav.fill ul li a {
+                                                                                position: relative;
+                                                                            }
+                                                                            
+                                                                            nav.stroke ul li a:after,
+                                                                            nav.fill ul li a:after {
+                                                                                position: absolute;
+                                                                                bottom: 0;
+                                                                                left: 0;
+                                                                                right: 0;
+                                                                                margin: auto;
+                                                                                width: 0%;
+                                                                                content: '.';
+                                                                                color: transparent;
+                                                                                background: #ffffff;
+                                                                                height: 2px;
+                                                                            }
+                                                                            
+                                                                            nav.stroke ul li a:hover:after {
+                                                                                width: 100%;
+                                                                            }
+                                                                            
+                                                                            nav.fill ul li a {
+                                                                                transition: all 2s;
+                                                                            }
+                                                                            
+                                                                            nav.fill ul li a:after {
+                                                                                text-align: left;
+                                                                                content: '.';
+                                                                                margin: 0;
+                                                                                opacity: 0;
+                                                                            }
+                                                                            
+                                                                            nav.fill ul li a:hover {
+                                                                                color: #fff;
+                                                                                z-index: 1;
+                                                                            }
+                                                                            
+                                                                            nav.fill ul li a:hover:after {
+                                                                                z-index: -10;
+                                                                                animation: fill 1s forwards;
+                                                                                -webkit-animation: fill 1s forwards;
+                                                                                -moz-animation: fill 1s forwards;
+                                                                                opacity: 1;
+                                                                            }
+                                                                            
+                                                                            .cta-mobile-text {
+                                                                                margin-top: 6rem;
+                                                                                color: #000;
+                                                                            }
+                                                                            
+                                                                            .cta {
+                                                                                display: block;
+                                                                                height: 40px;
+                                                                                width: 100px;
+                                                                                padding-left: 12px;
+                                                                                margin-bottom: -4px;
+                                                                                background: #fff;
+                                                                                color: #000;
+                                                                                line-height: 37px;
+                                                                                border-radius: 20px;
+                                                                            }
+                                                                            
+                                                                            .cta-mobile {
+                                                                                display: block;
+                                                                                height: 35px;
+                                                                                width: 90px;
+                                                                                background: #fff;
+                                                                                color: #000;
+                                                                                font-weight: bold;
+                                                                                line-height: 33px;
+                                                                                border-radius: 20px;
+                                                                                text-decoration: none;
+                                                                            }
+                                                                            
+                                                                            a:hover {
+                                                                                text-decoration: none;
+                                                                            }
+                                                                            
+                                                                            .cta-mobile:hover,
+                                                                            .cta:hover {
+                                                                                color: #6e9cb7;
+                                                                                font-weight: 900;
+                                                                                font-size: 18px;
+                                                                            }
+                                                                            /*Main Content*/
+                                                                            
+                                                                            .main-image {
+                                                                                width: 100%;
+                                                                                height: 100%;
+                                                                            }
+                                                                            
+                                                                            .main-content {
+                                                                                background-color: #6e9cb7;
+                                                                                color: #ffffff;
+                                                                                text-align: center;
+                                                                            }
+                                                                            
+                                                                            .read-more {
+                                                                                color: #000;
+                                                                                text-align: left;
+                                                                            }
+                                                                            
+                                                                            .read-more:hover {
+                                                                                color: #fff;
+                                                                                font-size: 20px;
+                                                                            }
+                                                                            /*Footer*/
+                                                                            
+                                                                            .page-footer,
+                                                                            .fab,
+                                                                            .footer-icon,
+                                                                            .footer-customer {
+                                                                                color: #979898;
+                                                                            }
+                                                                            
+                                                                            .footer-icon:hover,
+                                                                            .fab:hover,
+                                                                            .footer-customer:hover {
+                                                                                color: #c1b086;
+                                                                            }
+                                                                            
+                                                                            .footer-header {
+                                                                                color: #222222;
+                                                                            }
+                                                                            /*Media Queries*/
+                                                                            
+                                                                            @media only screen and (min-width: 968px) {
+                                                                                .motto {
+                                                                                    font-size: 2.5rem;
+                                                                                    margin-top: -20rem
+                                                                                }
+                                                                                .motto1 {
+                                                                                    font-size: 3rem;
+                                                                                }
+                                                                            }
+                                                                            
+                                                                            @media only screen and (max-width: 768px) {
+                                                                                .hero-image {
+                                                                                    height: 50vh;
+                                                                                }
+                                                                                .navbar {
+                                                                                    background-color: #000 !important;
+                                                                                }
+                                                                            }
